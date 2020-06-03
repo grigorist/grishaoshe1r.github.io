@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Шпаргалка GS от Udemy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html" target="_blank">Меню</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  JavaScript
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="index.html#1" target="_blank">Переменные</a>
+                    <a class="dropdown-item" href="index.html#2" target="_blank">Типы данных</a>
+                    <a class="dropdown-item" href="index.html#3" target="_blank">Выражения</a>
+                    <a class="dropdown-item" href="Java/comments.html" target="_blank">Коментарии</a>
+                    <a class="dropdown-item" href="index.html#5" target="_blank">Помощь в верстке</a>
+                    <a class="dropdown-item" href="index.html#6" target="_blank">Плагины</a>
+                  </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Python</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Разное
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="book.html">Книга по JS</a>
+                <a class="dropdown-item" href="#">Меню</a>
+                <a class="dropdown-item" href="#">Слайдеры</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">CSS-3 помощник</a>
+                <a class="dropdown-item" href="#">Помощь в верстке</a>
+                <a class="dropdown-item" href="#">Плагины</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://ossproject.fun" target="_blank">Портфолио</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск.." aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+          </form>
+        </div>
+      </nav>
+  </header> 
+  <section class="tipes">
+    <div class="tipes__title">Коментарии В JavaScript</div>
+    <div class="tipes__hr"></div>
+            <div class="container mt-5">
+                <h2>Комментарии Javascript</h2>
+                Комментарии используются для пояснения JavaScript кода, чтобы сделать его более понятным.<br>Также, комментарии позволяют закрыть отдельные участки JavaScript кода от выполнения во время тестирования альтернативных алгоритмов.
+                <h3>Однострочные комментарии</h3>
+                Чтобы определить однострочный комментарии, необходимо перед текстом комментария написать двойной прямой слэш (//). Любой текст между двойным слэшем (//) и концом строки будет игнорироваться (не будет выполняться) обработчиком JavaScript.
+                В следующем примере перед каждой строкой кода определяется однострочный комментарий:<br>
+                <code>
+                 // Изменим заголовок:<br>
+                 document.getElementById("myH").innerHTML = "Моя первая веб-страница";<br>
+                 // Изменим параграф:<br>
+                 document.getElementById("myP").innerHTML = "Мой первый параграф."; <br>
+                </code>
+                <b>В следующем примере одностроччный комментарий используется в конце каждой строки для пояснения JavaScript кода:</b>
+                <code>
+                 var x = 5;      // Декларируем переменную x и присваиваем ей значение 5<br>
+                 var y = x + 2;  // Декларируем переменную y и присваиваем ей значение x + 2 <br>
+                </code>
+                </h2>Многострочные комментарии</h3>
+                Для определения многострочного комментария используется конструкция /*...*/. Любой текст, находящийся между /* и */ будет игнорироваться обработчиком JavaScript.<br>В следующем примере используется многострочный комментарий (блок комментария) для пояснения JavaScript кода:
+                <code>
+                 /*<br>
+                 Код ниже изменит<br>
+                 на моей веб-странице<br>
+                 заголовок с id = "myH"<br>
+                 и параграф с id = "myP":<br>
+                 */<br>
+                 document.getElementById("myH").innerHTML = "Моя первая веб-страница";<br>
+                 document.getElementById("myP").innerHTML = "Мой первый параграф."; <br>
+                </code>
+                Как правило, чаще используют однострочные комментарии. Блоки комментариев обычно используются для официальной документации.
+                Использование комментариев, чтобы закрыть код от выполнения
+                Для того чтобы протестировать работу скрипта, очень удобно закрывать определенные участки кода при помощи комментариев, проверяя различные альтернативы.
+                Добавление слэшей // перед строкой кода сделает его неисполняемым и превратит в комментарий.
+                В следующем примере слэши // используются, чтобы закрыть от выполнения одну из строк кода:
+                <code>
+                 //document.getElementById("myH").innerHTML = "Моя первая веб-страница";<br>
+                 document.getElementById("myP").innerHTML = "Мой первый параграф."; <br>
+                В следующем примере блок комментариев используется, чтобы закрыть от выполнения сразу несколько строк кода:
+                 /*<br>
+                 document.getElementById("myH").innerHTML = "Моя первая веб-страница";<br>
+                 document.getElementById("myP").innerHTML = "Мой первый параграф."; <br>
+                 */<br>
+                </code>
+                
+            </div>
+  </section>
+
+
+<section class="footer">
+<div class="footer__menu pt-5">
+   <!-- <nav>
+        <ul>
+            <li><a href="https://vk.com/grstetsenko" target="_blank" class="link">VK</a></li>
+            <li><a href="https://instagram.com/grishastetsenko" target="_blank" class="link">Instagram</a></li>
+            <li><a href="https://ossproject.com" target="_blank" class="link">WebSite - Portfolio</a></li>
+            <li><a href="https://tlgg.ru/graciejiu" target="_blank" class="link">Telegram</a></li>
+            <li><a href="http://wa.me/+79519304886" target="_blank" class="link">WhatsApp</a></li>
+        </ul>   
+   </nav>
+</div>   -->
+<p>Данная страница является ознакомительным и справочным материалом .</p>
+</div>   
+</section>
+
+      
+  
+  <script src="js/js.js"></script> 
+  <script type="text/javascript" src="/js/jquery.gdocsviewer.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+   $('a.embed').gdocsViewer({width: 630, height: 600});
+});
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
