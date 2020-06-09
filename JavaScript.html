@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>JavaScript - шпаргалка</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;width: 100%;">
+        <a class="navbar-brand" href="index.html">Главная</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link dropdown-toggle" href="JavaScript.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  JavaScript
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="JavaScript.html#1">Переменные</a>
+                    <a class="dropdown-item" href="JavaScript.html#2">Типы данных</a>
+                    <a class="dropdown-item" href="JavaScript.html#3">Выражения</a>
+                    <a class="dropdown-item" href="Java/comments.html" target="_blank">Коментарии</a>
+                    <a class="dropdown-item" href="JavaScript.html#5" target="_blank">Помощь в верстке</a>
+                    <a class="dropdown-item" href="tables_js.html">Значения JS</a>
+                  </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Python</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HTML5 / CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">CMS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://bootstrap-4.ru" target="_blank">Bootstrap</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Разное
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="book.html">Книга по JS</a>
+                <a class="dropdown-item" href="#">Меню</a>
+                <a class="dropdown-item" href="#">Слайдеры</a>
+                <a class="dropdown-item" href="#">CSS-3 помощник</a>
+                <a class="dropdown-item" href="#">Помощь в верстке</a>
+                <a class="dropdown-item" href="tables_js.html">Значения JS</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://ossproject.fun">Портфолио</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск.." aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+          </form>
+        </div>
+      </nav>
+  </header> 
+  <section class="js" id="1">
+      <br><br><br>
+      <h2>Раздел JavaScript</h2>
+      <div class="hr"></div>         
+    <h4 class="mt-5">Переменные</h4>
+    <div class="tipes__hr"></div>   
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="prototype">
+                <br>
+                var - Обозначение переменной<br>
+                1) Следующее слово обозначает чему равна , или какое имеет значение переменная.<br>
+                <code class="jscode">var firstName = "Grisha";</code><br>
+                2) Объявление значения перменной в консоль.
+                <code class="jscode">console.log(firstName);</code><br>
+                3) Можно объявить переменную (допустим) возвраста пользователя. <br>
+                <code class="jscode">
+                    var age = 18;
+                    console.log(age);
+                </code><br>
+                4) Если не присваивать значения переменной , то при выводе в консоль , вы получите "undefined".<br>
+                5) Переменная <code class="jscode">null</code> - означает , что переменная пустая , т.е не содержит в себе никаких данных.<br>
+                6) <span>ПРАВИЛО!</span> - Имена переменных нужно начинать с буквы / символа нижнего подчеркивания / $ , все остальные символы запрещены. <br>
+                <span>Примеры :</span> <br> <code>var $user = "name"; <br> var _OlegOlegov = "Sturov";</code> <br>
+                 Также нельзя начинать имя переменной с цифры , и называть перемнную "console".
+
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="protorype2">
+            <b>Переменные — это символические имена в программе. Точно так же, как х может
+                представлять некоторое пока еще неизвестное значение в алгебре или точку на пиратской карте, обозначающую место, где зарыты сокровища, переменные в программировании используются для представления всевозможных величин.
+                Можете считать переменные контейнерами, предназначенными для хранения данных. Этим контейнерам можно присваивать имена и впоследствии использовать их
+                для извлечения и изменения хранимых данных.</b> <br>
+                <b>В отсутствие переменных любая компьютерная программа может быть предназначена только для чего-то одного. Например, рассмотрим следующий пример, включающий всего лишь одну строку, в которой не используются переменные:
+                    <code class="jscode">a l e r t (3 + 7 ) ;</code>
+                    Эта программа суммирует числа 3 и 7 и выводит результат во всплывающем окне
+                    браузера.
+                    Однако от такой программы нет почти никакого толка (если только вам не приходится регулярно вспоминать, чему равна сумма чисел 3 и 7). Используя переменные,
+                    можно создать универсальную программу, которая будет суммировать любые два числа и выводить результат, как в следующем примере.</b><br>
+                    <code class="jscode">
+                        v a r f ir s t N u m b e r = 3;<br>
+                        v a r se co n d N u m b er = 7;<br>
+                        var total = Number(firstNumber) + Number(secondNumber);<br>
+                        alert (total);<br>
+                    </code>
+                        <b>Сделав еще один шаг, можно расширить программу таким образом, чтобы пользователь мог задавать числа, сумму которых требуется найти.</b> <br>
+                        <code class="jscode">
+                        var firstNumber = prompt("Введите первое число");<br>
+                        var secondNumber = prompt("Введите второе число");<br>
+                        var total = Number(firstNumber) + Number(secondNumber);<br>
+                        alert (total);<br>
+                    </code>
+            </div>    
+        </div>
+    </div>   
+</div>
+  <center><button class="btner"><a href="book.html" target="_blank"> Остальное можно прочитать в книге по JS</a></button></center>
+  <br>
+  </section>
+
+  <section class="tipes" id="2">
+   <div class="tipes__title">ТИПЫ ДАННЫХ В JavaScript</div>
+   <div class="tipes__hr"></div>
+   <div class="container mt-3">
+       <p>Компьютеры обрабатывают информацию — данные. Данные могут быть представлены в различных формах или типах. Большая часть функциональности JavaScript реализуется за счет простого набора объектов и типов данных. Функциональные возможности, связанные со строками, числами и логикой, базируются на строковых, числовых и логических типах данных. Другая функциональная возможность, включающая регулярные выражения, даты и математические операции, осуществляется с помощью объектов RegExp, Date и Math. <br>
+        <b>Литералы</b> в JavaScript представляют собой особый класс типа данных, фиксированные значения одного из трех типов данных — строкового, числового или логического:</p>
+     <div class="titles__window">
+         <code>
+            "это строка" <br>
+            3.14 <br>
+            true <br>
+            alert("Hellow"); // "Hellow" - это литерал <br>
+            var myVariable = 15; // 15 - это литерал <br>
+         </code>
+     </div>
+     <p>К <b>простым</b> типам данных относят <b>строковый, числовой, логический, null и underfined.</b></p>
+    </div>
+    <div class="container">
+    <div class="row taber">
+        <div class="col-xs-12 ">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Строковый тип (string)</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Числовой тип (number)</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Логический тип (boolean)</a>
+              <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">Глобальные и локальные переменные</a>
+            </div>
+          </nav>
+          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                Используется для хранения строки символов, заключенных в двойные или одинарные кавычки. Пустой набор символов, заключенный в одинарные или двойные кавычки, является пустой строкой. Число, заключенное в кавычки, также является строкой.
+                <br><code>
+                var money = ""; // пустая строка, ноль символов<br>
+                var work = 'test';<br>
+                var day = "Sunday";<br>
+                var x = "150";<br>
+            </code><br>
+            В строку в двойных кавычках можно включить одиночную кавычку и наоборот. Кавычка того же типа отключается с помощью символа обратного слэша \ (так называемая escape-последовательность): <br>
+            <code>document.writeln("\"Доброе утро, Иван Иваныч!\"\n"); // выведет на экран "Доброе утро, Иван Иваныч!"</code> <br>
+            <b>Строки можно сравнивать, а также объединять с помощью операции конкатенации +. Благодаря автоматическому приведению типов можно объединять числа и строки. Строки являются постоянными, после того, как строка создана, она не может быть изменена, но может быть создана новая строка путем объединения других строк.</b>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <b>Используется для числовых значений. Числа в языке JavaScript бывают двух типов: целые числа (integer) и числа с плавающей точкой (floating-point number). Целочисленные величины могут быть положительными, например 1, 2, и отрицательными, например –1, –2, или равными нулю. 1 и 1.0 — одно и то же значение. Большинство чисел в JavaScript записываются в десятичной системе счисления, также может использоваться восьмеричная и шестнадцатеричная системы.</b> <br>
+                В десятичной системе значения числовых переменных задаются с использованием арабских цифр <b>1, 2, 3, 4, 5, 6, 7, 8, 9, 0.</b><br>                
+                <b>В восьмеричном формате числа представляет собой последовательность, содержащая цифры от 0 до 7 и начинающаяся с префикса 0.</b><br>                
+                Для шестнадцатеричного формата добавляется префикс 0x (0X), за которым следует последовательность из цифр от 0 до 9 или букв от a (A) до f (F), соответствующие значениям от 10 до 15.<br>
+            <code>
+                var a = 120; // целое десятичное числовое значение <br>
+                var b = 012; // восьмеричный формат<br>
+                var c = 0xfff; // шестнадцатеричный формат<br>
+                var d = 0xACFE12; // шестнадцатеричный формат<br>
+            </code> <br>
+            <b>Числа с плавающей точкой представляют собой числа с дробной десятичной частью, либо это числа, выраженные в экспоненциальном виде. Экспоненциальная запись чисел предполагает следующий вид: число с дробной десятичной частью, за ним следует буква e, которая может быть указана как в верхнем, так и в нижнем регистре, далее — необязательный знак + или - и целая экспонента.</b> <br>
+            <code>
+                var a = 6.24; // вещественное число <br>
+                var b = 1.234E+2; // вещественное число, эквивалентно 1.234 Х 10² <br>
+                var c = 6.1e-2; // вещественное число, эквивалентно 6.1 Х 10‾² <br>
+            </code>
+            
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                Данный тип имеет два значения, <b>true (истина)</b>, <b> false (ложь).</b> Используется для сравнения и проверки условий. <br>
+                <code>
+                    var answer = confirm("Вам понравилась эта статья?\n Нажмите ОК. Если нет, то нажмите Cancel."); <br>
+                    if (answer == true)<br>
+                    {<br>
+                    alert("Спасибо!");<br>
+                    }<br>
+                </code>
+                <p>Также существуют специальные типы простых значений:
+                    <b>нулевой тип</b> — данный тип имеет одно значение null, которое используется для представления несуществующих объектов.
+                    <b>неопределенный тип</b> — тип переменной underfined означает отсутствие первоначального значения переменной, а также несуществующее свойство объекта.
+                    <b>Составные типы данных</b> состоят из более чем одного значения. К ним относятся объекты и особые типы объектов — массивы и функции. Объекты содержат свойства и методы, массивы представляют собой индексированный набор элементов, а функции состоят из коллекции инструкций.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                <b>Переменные</b> по области видимости делятся на <b>глобальные</b> и </b>локальные</b>. Область видимости представляет собой часть сценария, в пределах которой имя переменной связано с этой переменной и возвращает ее значение. Переменные, объявленные внутри тела функции, называются локальными, их можно использовать только в этой функции. Локальные переменные создаются и уничтожаются вместе с соответствующей функцией.<br>
+                Переменные, объявленные внутри элемента , или внутри функции, но без использования ключевого слова var, называются глобальными. Доступ к ним может осуществляться на протяжении всего времени, пока страница загружена в браузере. Такие переменные могут использоваться всеми функциями, позволяя им обмениваться данными.<br>
+                <b>Глобальные переменные</b> попадают в глобальное пространство имен, которое является местом взаимодействия отдельных компонентов программы. Не рекомендуется объявлять переменные таким способом, так как аналогичные имена переменных уже могут использоваться любым другим кодом, вызывая сбой в работе скрипта.<br>
+                <b>Глобальное пространство в JavaScript представляется глобальным объектом window. </b> Добавление или изменение глобальных переменных автоматически обновляет глобальный объект. В свою очередь, обновление глобального объекта автоматически приводит к обновлению глобального пространства имен.
+                Если глобальная и локальная переменная имеют одинаковые имена, то локальная переменная будет иметь преимущество перед глобальной.
+                Локальные переменные, объявленные внутри функции в разных блоках кода, имеют одинаковые области видимости. Тем не менее, рекомендуется помещать объявления всех переменных в начале функции.
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="js3" id="3">
+    <div class="tipes__title">Выражения В JavaScript</div>
+    <div class="tipes__hr"></div>
+    <div class="container mt-3 pb-3">
+        <b>Выражения в JavaScript</b> представляют собой комбинации операндов и операторов.
+        Операции в выражениях выполняются последовательно в соответствии со значением приоритета (чем больше значение приоритета, тем он выше). Возвращаемый результат не всегда имеет значение того же типа, что и тип обрабатываемых данных. Например, в операциях сравнения участвуют операнды различных типов, но возвращаемый результат всегда будет логического типа. <br>
+       <img src="https://html5book.ru/wp-content/uploads/2015/06/expression-in-javascript.png" alt="Структура выражения" class="images"> <br>
+            <b>Операнды</b> — это данные, обрабатываемые сценарием JavaScript. В качестве операндов могут быть как простые типы данных, так и сложные, а также другие выражения. <br>
+            <b> Операторы</b> — это символы языка, выполняющие различные операции с данными. Операторы могут записываться с помощью символов пунктуации или ключевых слов.<br>
+            <b>В зависимости</b> от количества операндов различают следующие типы операторов:<br>
+            <b>унарный</b> — в операции участвует один операнд;<br>
+            <b>бинарный</b> — в операции участвуют два операнда;<br>
+            <b>тернарный</b> — комбинирует три операнда.<br>
+            <b> Простейшая форма выражения</b> — литерал — нечто, вычисляемое само в себя, например, число 100, строка "Hellow world". Переменная тоже может быть выражением, так как она вычисляется в присвоенное ей значение.<br>    
+            <embed src="pages/выражения.pdf" width="100%" height="700"/>
+        </div>
+  </section>
+
+
+<section class="footer">
+<div class="footer__menu pt-5">
+ <!-- <nav>
+        <ul>
+            <li><a href="https://vk.com/grstetsenko" target="_blank" class="link">VK</a></li>
+            <li><a href="https://instagram.com/grishastetsenko" target="_blank" class="link">Instagram</a></li>
+            <li><a href="https://ossproject.com" target="_blank" class="link">WebSite - Portfolio</a></li>
+            <li><a href="https://tlgg.ru/graciejiu" target="_blank" class="link">Telegram</a></li>
+            <li><a href="http://wa.me/+79519304886" target="_blank" class="link">WhatsApp</a></li>
+        </ul>   
+   </nav>
+</div>   -->
+<p>Данная страница является ознакомительным и справочным материалом .</p>
+</section>
+
+      
+  
+  <script src="js/js.js"></script> 
+  <script type="text/javascript" src="/js/jquery.gdocsviewer.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+   $('a.embed').gdocsViewer({width: 630, height: 600});
+});
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
