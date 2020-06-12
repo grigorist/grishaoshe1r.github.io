@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(https://setilend.ru/wa-data/public/site/kategorii/matplata.jpeg) center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+.sidebar {
+    margin-top: 17px;
+    margin-left: 10px;
+    width: 270px;
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 6px;
+    border-radius:3px;
+    min-height: 100px;
+}
+
+.title_side{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0;
+    padding: 9px 4px;
+}
+
+.sidebar li {
+    list-style-type: none;
+}
+
+.sidebar h4 {
+    text-align: center;
+}
+
+.sidebar a:hover {
+    color: #000000;
+}
+
+.sidebar a {
+    color:white;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: 6px;
+}
+
+.sidebar a:hover{
+    background: #FFFFFF;
+    color: #262626;
+}
+
+.code {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.main-feed {
+    max-width: 988px;
+    margin-top: 18px;
+    flex-grow:1; /*Элемент не сжиается за счет правил флекса */
+}
+
+.post {
+    background: #FFFFFF;
+    /* Elevation 1 */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 16px 0;
+    padding: 16px;
+    }
+    
+    .post-header {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    .post-author {
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+    align-items: center;
+    /* Daybreak Blue / blue-8 */
+    color: #0050B3;
+    text-decoration: none;
+    font-weight: 600;
+    }
+    
+    .post-header-button {
+        background: rgb(255, 255, 255);
+        border:none;
+    }
+    
+    .post-header-button:hover {
+        background: #f3f3f3;
+    }
+    
+    .post-header .user-avatar {
+        width:48px;
+        height: 48px;
+        cursor:pointer;
+        margin-right: 13px;
+    }
+    
+    .post-info {
+        display:flex;
+        flex-wrap: wrap; /* - Отвечает за возможность переноса элементов */
+    }
+    
+    .post-author {
+        width:100%;
+    }
+    
+    .post-time {
+    font-size: 14px;
+    line-height: 22px;
+    color: #8C8C8C;
+    }
+    
+    .post-time:after { /* Маленькая точка между 2hrs и кнопкой настроек */
+    content:'';
+    width: 4px;
+    height: 4px;
+    background: #bfbfbf;  
+    display:inline-block  ;
+    border-radius:50%;
+    margin-right: 6px;
+    margin-left: 6px;
+    vertical-align: middle; /* - Вертикальное выравнивание */
+    }
+    
+    .post-info-time {
+        display: flex;
+        align-items: center;
+    }
+    
+    /* Текстовый контент в новостных события в ленте */
+    
+    .post-text {
+        font-size: 14px;
+        line-height: 22px;
+        color: #595959;
+        margin-bottom: 16px;
+    }
+    
+    .post-text a {
+        color:#096dd9;
+        text-decoration: none;
+    }
+    
+    .post-img {
+        border:1px solid #bfbfbf;
+        border-radius: 4px;
+        max-width: 100%;
+    }
+    
+.post-content b {
+    color: green;
+    font-weight: 600;
+    font-size: 18px;
+}    
+
+.post-content text {
+    color:blue;
+    font-weight: normal;
+
+}
+
+.post-content code {
+    color: black;
+}
+
+.post-content span {
+    color:red;
+}
+
+.post-footer a {
+    color:black;
+    text-decoration: none;
+}
+
+/* Подвал */
+
+.footer {
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+    height: 140px;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+.footer__menu {
+    text-align:center;
+}
+
+
+.footer__menu p {
+    color:yellow;
+    text-transform: uppercase;
+}
