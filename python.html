@@ -1,16 +1,258 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Шпаргалка Python</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pt.css">
+    <link rel="stylesheet" href="css/ptmob.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   </head>
   <body>
-      <center>Пока что пусто...</center>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Главная</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="JavaScript.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  JavaScript
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="JavaScript.html#1">Переменные</a>
+                    <a class="dropdown-item" href="JavaScript.html#2">Типы данных</a>
+                    <a class="dropdown-item" href="JavaScript.html#3">Выражения</a>
+                    <a class="dropdown-item" href="Java/comments.html" target="_blank">Коментарии</a>
+                    <a class="dropdown-item" href="JavaScript.html#5" target="_blank">Помощь в верстке</a>
+                    <a class="dropdown-item" href="tables_js.html">Значения JS</a>
+                  </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="python.html">Python</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HTML5 / CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">CMS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://bootstrap-4.ru" target="_blank">Bootstrap</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Разное
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="book.html">Книга по JS</a>
+                <a class="dropdown-item" href="#">Меню</a>
+                <a class="dropdown-item" href="#">Слайдеры</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">CSS-3 помощник</a>
+                <a class="dropdown-item" href="#">Помощь в верстке</a>
+                <a class="dropdown-item" href="tables_js.html">Значения JS</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://grigorist.ru">Портфолио</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск.." aria-label="Search">
+            <button class="btn btn-outline-success my-3 my-sm-0" type="submit">Поиск</button>
+          </form>
+        </div>
+      </nav>
+    </header>       
+<main>
+    <div  class="sidebar">
+      <div class="title_side">
+        <h4>Полезное</h4>
+      </div>
+      <li><a href="https://wombat.org.ua/AByteOfPython/AByteofPythonRussian-2.02.pdf" class="btn" target="_blank">Учебники Python</a></li>
+      <li><a href="https://www.onlinegdb.com/online_python_compiler" class="btn" target="_blank">Онлайн комплятор в exe</a></li>
+      <li><a href="https://repl.it/" class="btn" target="_blank">Python в браузере</a></li>
+      <li><a href="https://www.youtube.com/watch?v=n0xtO0x81cg&list=PL0lO_mIqDDFXgfuxOEDTCwsWmKezOaDTu" class="btn" target="_blank">Для начинающих</a></li>
+      <div class="title_side mt-2">
+        <h4>Другое</h4>
+      </div>
+      <li><a href="#" class="btn" target="_blank">link</a></li>
+      <li><a href="#" class="btn" target="_blank">link</a></li>
+      <li><a href="#" class="btn" target="_blank">link</a></li>
+      <li><a href="#" class="btn" target="_blank">link</a></li>
+    </div>
+<div class="container">
+  <div class="main-feed">
+    <div class="post">
+      <div class="post-header">
+      <div class="user">
+        <div class="post-info">
+        <p href="#" class="post-author">Пример двух простых программ на Питоне</p>  
+        </div>
+      </div>
+      <button class="post-header-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="post-button-icon">
+            <path d="M4.125 11.9766C4.125 12.1489 4.15895 12.3196 4.22491 12.4788C4.29087 12.6381 4.38755 12.7828 4.50942 12.9046C4.6313 13.0265 4.77599 13.1232 4.93523 13.1892C5.09447 13.2551 5.26514 13.2891 5.4375 13.2891C5.60986 13.2891 5.78053 13.2551 5.93977 13.1892C6.09901 13.1232 6.2437 13.0265 6.36558 12.9046C6.48745 12.7828 6.58413 12.6381 6.65009 12.4788C6.71605 12.3196 6.75 12.1489 6.75 11.9766C6.75 11.8042 6.71605 11.6335 6.65009 11.4743C6.58413 11.3151 6.48745 11.1704 6.36558 11.0485C6.2437 10.9266 6.09901 10.8299 5.93977 10.764C5.78053 10.698 5.60986 10.6641 5.4375 10.6641C5.26514 10.6641 5.09447 10.698 4.93523 10.764C4.77599 10.8299 4.6313 10.9266 4.50942 11.0485C4.38755 11.1704 4.29087 11.3151 4.22491 11.4743C4.15895 11.6335 4.125 11.8042 4.125 11.9766ZM10.6875 11.9766C10.6875 12.3247 10.8258 12.6585 11.0719 12.9046C11.3181 13.1508 11.6519 13.2891 12 13.2891C12.3481 13.2891 12.6819 13.1508 12.9281 12.9046C13.1742 12.6585 13.3125 12.3247 13.3125 11.9766C13.3125 11.6285 13.1742 11.2946 12.9281 11.0485C12.6819 10.8023 12.3481 10.6641 12 10.6641C11.6519 10.6641 11.3181 10.8023 11.0719 11.0485C10.8258 11.2946 10.6875 11.6285 10.6875 11.9766ZM17.25 11.9766C17.25 12.3247 17.3883 12.6585 17.6344 12.9046C17.8806 13.1508 18.2144 13.2891 18.5625 13.2891C18.9106 13.2891 19.2444 13.1508 19.4906 12.9046C19.7367 12.6585 19.875 12.3247 19.875 11.9766C19.875 11.6285 19.7367 11.2946 19.4906 11.0485C19.2444 10.8023 18.9106 10.6641 18.5625 10.6641C18.2144 10.6641 17.8806 10.8023 17.6344 11.0485C17.3883 11.2946 17.25 11.6285 17.25 11.9766Z" fill="#595959"></path>
+            </svg>                
+      </button>
+</div>
+<!-- /.post-header -->
+<div class="post-content">
+ <p>
+   <h>Для проверки , скопируйте код и проверьте его работу <a href="https://repl.it/">ТУТ</a></h> <br>
+    <code>
+              <b>#Пример сообщения</b> <br>
+
+        <span>name</span> <text>=</text> input ( "Введите своё имя : ") <br>
+      <span>age</span> <text>=</text> input ( "Введите свой возраст: ") <br>
+
+    <span>print</span>( "Добрый день ," + name + "!") <br>
+  <span>print</span>( "Тебе всего " + age + " лет , ты еще молодой)) ") <br>
+
+      <b>#Обычный калькулятор</b> <br>
+
+    <span>what</span> = input("Что делаем ( + , -) : ") <br>
+
+  <span>a</span> = float(input("Введи первое число : ") ) <br>
+<span> b</span> = float(input("Введи второе число: ") ) <br>
+
+<span>if</span> what <text>==</text> "+": <br>
+        c <text>=</text> a <text>+</text> b <br>
+      <span>print</span>("Результат: " + str(c)) <br>
+    <span>elif</span> what <text>==</text> "-": <br>
+        c <text>=</text> a <text>-</text> b   <br>
+        print("Результат: " + str(c)) <br>
+      <span>else:</span> <br>
+    <span>print</span>("Выбрана неверная операция!")  
+
+
+    </code>
+ </p>
+</div>
+<!-- /.post-content -->
+<div class="post-footer">
+ <button class="post-button">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="post-button-icon">
+        <path d="M17.625 15.5625C16.957 15.5625 16.3406 15.7969 15.8578 16.1883L11.0016 12.675C11.0829 12.2287 11.0829 11.7713 11.0016 11.325L15.8578 7.81172C16.3406 8.20312 16.957 8.4375 17.625 8.4375C19.1766 8.4375 20.4375 7.17656 20.4375 5.625C20.4375 4.07344 19.1766 2.8125 17.625 2.8125C16.0734 2.8125 14.8125 4.07344 14.8125 5.625C14.8125 5.89687 14.85 6.15703 14.9227 6.40547L10.3102 9.74531C9.62578 8.83828 8.53828 8.25 7.3125 8.25C5.24062 8.25 3.5625 9.92812 3.5625 12C3.5625 14.0719 5.24062 15.75 7.3125 15.75C8.53828 15.75 9.62578 15.1617 10.3102 14.2547L14.9227 17.5945C14.85 17.843 14.8125 18.1055 14.8125 18.375C14.8125 19.9266 16.0734 21.1875 17.625 21.1875C19.1766 21.1875 20.4375 19.9266 20.4375 18.375C20.4375 16.8234 19.1766 15.5625 17.625 15.5625ZM17.625 4.40625C18.2977 4.40625 18.8438 4.95234 18.8438 5.625C18.8438 6.29766 18.2977 6.84375 17.625 6.84375C16.9523 6.84375 16.4062 6.29766 16.4062 5.625C16.4062 4.95234 16.9523 4.40625 17.625 4.40625ZM7.3125 14.0625C6.17578 14.0625 5.25 13.1367 5.25 12C5.25 10.8633 6.17578 9.9375 7.3125 9.9375C8.44922 9.9375 9.375 10.8633 9.375 12C9.375 13.1367 8.44922 14.0625 7.3125 14.0625ZM17.625 19.5938C16.9523 19.5938 16.4062 19.0477 16.4062 18.375C16.4062 17.7023 16.9523 17.1562 17.625 17.1562C18.2977 17.1562 18.8438 17.7023 18.8438 18.375C18.8438 19.0477 18.2977 19.5938 17.625 19.5938Z" fill="#595959"></path>
+        </svg>            
+    <span class="post-button-text"> <a href="https://vk.com/share.php?url=http://grishaosher.github.io" target="_blank">Поделиться VK</a></span>
+ </button>
+</div>
+<!-- /.footer -->
+  </div>
+  <div class="post">
+    <div class="post-header">
+    <div class="user">
+      <div class="post-info">
+      <p href="#" class="post-author">Решение задачи C4 из диагностической работы ЕГЭ 2015</p>  
+      </div>
+    </div>
+    <button class="post-header-button">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="post-button-icon">
+          <path d="M4.125 11.9766C4.125 12.1489 4.15895 12.3196 4.22491 12.4788C4.29087 12.6381 4.38755 12.7828 4.50942 12.9046C4.6313 13.0265 4.77599 13.1232 4.93523 13.1892C5.09447 13.2551 5.26514 13.2891 5.4375 13.2891C5.60986 13.2891 5.78053 13.2551 5.93977 13.1892C6.09901 13.1232 6.2437 13.0265 6.36558 12.9046C6.48745 12.7828 6.58413 12.6381 6.65009 12.4788C6.71605 12.3196 6.75 12.1489 6.75 11.9766C6.75 11.8042 6.71605 11.6335 6.65009 11.4743C6.58413 11.3151 6.48745 11.1704 6.36558 11.0485C6.2437 10.9266 6.09901 10.8299 5.93977 10.764C5.78053 10.698 5.60986 10.6641 5.4375 10.6641C5.26514 10.6641 5.09447 10.698 4.93523 10.764C4.77599 10.8299 4.6313 10.9266 4.50942 11.0485C4.38755 11.1704 4.29087 11.3151 4.22491 11.4743C4.15895 11.6335 4.125 11.8042 4.125 11.9766ZM10.6875 11.9766C10.6875 12.3247 10.8258 12.6585 11.0719 12.9046C11.3181 13.1508 11.6519 13.2891 12 13.2891C12.3481 13.2891 12.6819 13.1508 12.9281 12.9046C13.1742 12.6585 13.3125 12.3247 13.3125 11.9766C13.3125 11.6285 13.1742 11.2946 12.9281 11.0485C12.6819 10.8023 12.3481 10.6641 12 10.6641C11.6519 10.6641 11.3181 10.8023 11.0719 11.0485C10.8258 11.2946 10.6875 11.6285 10.6875 11.9766ZM17.25 11.9766C17.25 12.3247 17.3883 12.6585 17.6344 12.9046C17.8806 13.1508 18.2144 13.2891 18.5625 13.2891C18.9106 13.2891 19.2444 13.1508 19.4906 12.9046C19.7367 12.6585 19.875 12.3247 19.875 11.9766C19.875 11.6285 19.7367 11.2946 19.4906 11.0485C19.2444 10.8023 18.9106 10.6641 18.5625 10.6641C18.2144 10.6641 17.8806 10.8023 17.6344 11.0485C17.3883 11.2946 17.25 11.6285 17.25 11.9766Z" fill="#595959"></path>
+          </svg>                
+    </button>
+</div>
+<!-- /.post-header -->
+<div class="post-content">
+<p>
+  <h4>Для большинства учеников самой сложной и нерешаемой задачей в ЕГЭ по информатике является задача C4.</h4><br>
+  Поэтому я разберу одну из них, и покажу, как такие задачи можно решать на языке Python.<br>
+  <b>Условие</b> <br>
+  По каналу связи передаётся последовательность положительных целых чисел, все числа не превышают 1000. Количество чисел равно N (N>2), но может быть очень велико. Затем передаётся контрольное значение последовательности – наибольшее число R, удовлетворяющее следующим условиям:<br> 
+  R – сумма двух различных переданных элементов последовательности («различные» означает, что нельзя просто удваивать переданные числа; суммы различных, но равных по величине допускаются);<br>
+  При делении на 3 число R даёт остаток 1;<br>
+  Если такого числа R нет, то контрольное значение полагается равным 1.<br>
+  В результате помех при передаче как сами числа, так и контрольное значение могут быть искажены.<br>
+  Напишите эффективную, в том числе по используемой памяти, программу (укажите используемую версию языка программирования, например, Borland Pascal 7.0), которая будет проверять правильность контрольного значения.<br>
+  Мы не последуем их совету (не будем писать программу на Pascal), а напишем её на Python.<br>
+  Вы увидите, насколько это легче и быстрее.<br>
+<b>Решение</b><br>
+  При делении на 3 число R даёт остаток 1. Из этого следует, что R может быть суммой или числа, дающего при делении на 3 остаток 0 с числом, дающим остаток 1, или двух чисел, дающих остаток 2.<br>
+  Поэтому для вычисления R достаточно запоминать не все числа (их может быть много), а только 4: максимальное, делящееся на 3; максимальное, дающее остаток 1; и два наибольших числа, дающих остаток 2.<br>
+  Решение, в общем-то, теперь очевидно. Далее я привожу программу с комментариями (без комментариев она заняла всего 25 строк).<br>
+<code>
+<span># Язык программирования - Python 3 </span><br>
+
+R_0 = R_1 = R_2_1 = R_2_2 = -2000 <br>
+<span># Переменные, в которых мы будем хранить числа</span> <br>
+
+N = int(input()) <br>
+<span># Не будем проверять входные данные на корректность </span><br>
+<span># В ЕГЭ (но не в реальной жизни!) это не нужно</span> <br>
+
+for i in range(N): <br>
+    num = int(input()) <br>
+    if num % 3 == 0: <br>
+        R_0 = max(R_0, num) <br>
+        # Перезаписываем число на большее, если возможно <br>
+    elif num % 3 == 1: <br>
+        R_1 = max(R_1, num) <br>
+    elif num % 3 == 2: <br>
+        # Можно и else, но так более понятно <br>
+        if num > R_2_1: <br>
+            R_2_1, R_2_2 = num, R_2_1 <br>
+            # Нужно хранить 2 наибольших числа, причём R_2_1 >= R_2_2 <br>
+        elif num > R_2_2: <br>
+            R_2_2 = num <br>
+
+R = max(R_0 + R_1, R_2_1 + R_2_2) <br>
+<span># Это - вычисленное контрольное значение</span> <br>
+if R < 0: <br>
+    # Если такого числа нет, R будет отрицательно <br>
+    # Так как все числа не превышают 1000 <br>
+    R = 1 <br>
+print("Вычисленное контрольное значение: {}".format(R))<br>
+
+<span># Осталось проверить пришедшее число</span><br>
+result = int(input())<br>
+if R == result:<br>
+    print("Контроль пройден")<br>
+else:<br>
+    print("Контроль не пройден")<br>
+</code>
+
+</p>
+</div>
+<!-- /.post-content -->
+<div class="post-footer">
+<button class="post-button">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="post-button-icon">
+      <path d="M17.625 15.5625C16.957 15.5625 16.3406 15.7969 15.8578 16.1883L11.0016 12.675C11.0829 12.2287 11.0829 11.7713 11.0016 11.325L15.8578 7.81172C16.3406 8.20312 16.957 8.4375 17.625 8.4375C19.1766 8.4375 20.4375 7.17656 20.4375 5.625C20.4375 4.07344 19.1766 2.8125 17.625 2.8125C16.0734 2.8125 14.8125 4.07344 14.8125 5.625C14.8125 5.89687 14.85 6.15703 14.9227 6.40547L10.3102 9.74531C9.62578 8.83828 8.53828 8.25 7.3125 8.25C5.24062 8.25 3.5625 9.92812 3.5625 12C3.5625 14.0719 5.24062 15.75 7.3125 15.75C8.53828 15.75 9.62578 15.1617 10.3102 14.2547L14.9227 17.5945C14.85 17.843 14.8125 18.1055 14.8125 18.375C14.8125 19.9266 16.0734 21.1875 17.625 21.1875C19.1766 21.1875 20.4375 19.9266 20.4375 18.375C20.4375 16.8234 19.1766 15.5625 17.625 15.5625ZM17.625 4.40625C18.2977 4.40625 18.8438 4.95234 18.8438 5.625C18.8438 6.29766 18.2977 6.84375 17.625 6.84375C16.9523 6.84375 16.4062 6.29766 16.4062 5.625C16.4062 4.95234 16.9523 4.40625 17.625 4.40625ZM7.3125 14.0625C6.17578 14.0625 5.25 13.1367 5.25 12C5.25 10.8633 6.17578 9.9375 7.3125 9.9375C8.44922 9.9375 9.375 10.8633 9.375 12C9.375 13.1367 8.44922 14.0625 7.3125 14.0625ZM17.625 19.5938C16.9523 19.5938 16.4062 19.0477 16.4062 18.375C16.4062 17.7023 16.9523 17.1562 17.625 17.1562C18.2977 17.1562 18.8438 17.7023 18.8438 18.375C18.8438 19.0477 18.2977 19.5938 17.625 19.5938Z" fill="#595959"></path>
+      </svg>            
+  <span class="post-button-text"> <a href="https://vk.com/share.php?url=http://grishaosher.github.io" target="_blank">Поделиться VK</a></span>
+</button>
+</div>
+<!-- /.footer -->
+</div>
+  </div>
+</div>
+</main>
+
+<section class="footer">
+  <div class="footer__menu pt-5">
+     <!-- <nav>
+          <ul>
+              <li><a href="https://vk.com/grstetsenko" target="_blank" class="link">VK</a></li>
+              <li><a href="https://instagram.com/grishastetsenko" target="_blank" class="link">Instagram</a></li>
+              <li><a href="https://ossproject.com" target="_blank" class="link">WebSite - Portfolio</a></li>
+              <li><a href="https://tlgg.ru/graciejiu" target="_blank" class="link">Telegram</a></li>
+              <li><a href="http://wa.me/+79519304886" target="_blank" class="link">WhatsApp</a></li>
+          </ul>   
+     </nav>
+  </div>   -->
+  <p>Данная страница является ознакомительным и справочным материалом .</p>
+  </div>   
+  </section>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
